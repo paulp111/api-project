@@ -1,19 +1,19 @@
 <?php
 
-namespace Ls\Api\Service;
+namespace Pp\Api\Service;
 
 use Firebase\JWT\JWT;
-use Ls\Api\Entity\User as UserEntity;
-use Ls\Api\ORM\UserModel;
-use Ls\Api\Service\Exception\CanNotLoginUserException;
-use Ls\Api\Service\Exception\EmailExistsException;
-use Ls\Api\Validation\CustomValidation;
-use Ls\Api\Validation\Exception\ValidationException;
+use Pp\Api\Entity\User as UserEntity;
+use Pp\Api\ORM\UserModel;
+use Pp\Api\Service\Exception\CanNotLoginUserException;
+use Pp\Api\Service\Exception\EmailExistsException;
+use Pp\Api\Validation\CustomValidation;
+use Pp\Api\Validation\Exception\ValidationException;
 use PH7\JustHttp\StatusCode;
 use PH7\PhpHttpResponseHeader\Http;
 use Ramsey\Uuid\Uuid;
 use RedBeanPHP\RedException\SQL;
-use function Ls\Api\Helpers\hashPassword;
+use function Pp\Api\Helpers\hashPassword;
 
 class User
 {

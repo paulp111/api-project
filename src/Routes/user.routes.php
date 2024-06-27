@@ -2,8 +2,8 @@
 
 namespace Pp\Api\Routes;
 
-use Ls\Api\Routes\Exception\NotAllowedException;
-use Ls\Api\Service\User;
+use Pp\Api\Routes\Exception\NotAllowedException;
+use Pp\Api\Service\User;
 
 
 $action = $_REQUEST["action"] ?? null;
